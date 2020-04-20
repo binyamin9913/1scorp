@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="c.css">
+</head>
+<body>
+    <div class="header">
+      </div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">about us</a>
+    <a href="#bottom" class="right">Bottom</a>
+    <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>
+          <a href="c.html">intreduction</a><br>  
+          <a href="variables.html">variables</a><br>
+          <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+          <a href="Output_Input.html">Output / Input</a><br>
+          <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+          <a href="Arrays.html">Arrays</a><br>
+          <a href="function.html">Functions</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+    <div style="height:200px;"></div>
+  </div>
+  <div class="main">
+        <b><i>Operands</i></b>
+        <br>
+        Operands are variable or fixed. In the previous chapter we discussed the variables, in this chapter we will also deal with regulators.
+        <br>
+        Constants - variables that initialize to predetermined and known values ​​that do not change during program execution. Each constant is attributed to a specific variable type, for example pi is a double type constant and its value is known to all (3.1415). If we want to use our program with pi we will not want to allow another value to be pi (i.e. we will not allow ourselves to change the value of pi). To do this we define the variable as constant.
+        To set the variable as constant, add the reserved word const before the type declaration.
+        <br>
+        Examples:
+        <br>const double pi = 3.1415;
+        <br>const int age = 65;
+        <br>const long phone = 6543232;
+        <br>Each constant can be forced to be int, double, float, etc. by adding an appropriate extension, and they:
+        <br>If you want the constant to be of long type, add the extension L.
+        <br>If you want the constant to be float type, add the extension F.
+        <br>If you want the constant to be a double type, add the extension D.
+        <br>If you want the constant to be of unsing type the suffix U.
+        <br>
+        <br>Examples:
+        <br>age = 65FL;
+        <br>pi = 3.1415F;
+        <br>In the first example we converted the variable type age from int to long.
+        <br>In the second example, we converted the pi variable type from double to float.
+        
+        Note: Not all compilers support these extensions, support is only for new compilers.
+        <br>
+        It is also possible to place variables of different types but it is important to note when doing so that in some cases we may lose information. For example, if we put a float to int variable, we will lose the incomplete part of the number.
+        <br>
+        <b><i>Operators</i></b>
+        <br>
+        Placement operator - represented by a character = where the expression value on the right is placed in a variable on the left:
+        <br>int a = 5;
+        <br>int b = a;<br>
+        First variable a will get the value 5 and then variable b will get the value of variable a i.e. the value of b after this statement will be 5.
+        <br>
+        <br>Accounting Operators - Allows you to perform invoicing operations such as connection, subtraction, division, and modulo (residual):
+        <br>a + b Connecting variables a and b.
+        <br>a-b Subtracting the variable a in b.
+        <br>a * b Multiplies variables a and b.
+        <br>a% b Remainder of variable a divided by b.
+        <br>
+        <table border="1">
+        <tr>
+            <td>      </td>
+            <td>before</td>
+            <td>before</td>
+            <td>before</td>
+            <td>after</td>
+            <td>after</td>
+            <td>after</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>a= b + c</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>5</td>
+            <td>2</td>
+            <td>3</td>
+           </tr>
+            <tr><td>a= b - c</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>-1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>a= b * c</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td></tr>
+                    <tr><td>a= b / c</td>
+                        <td>1</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>4</td>
+                        <td>2</td></tr>
+                        <tr><td>a= b % c</td>
+                            <td>1</td>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>5</td></tr>
+        </table><br>
+        Self-put operator - You can shorten the command write when you want to use the variable's value, take action on it and store the result in the variable itself:<br>
+Let's illustrate this by example: x * = 5 Consider x = x * 5<br>
+x / = 5 Consider x = x / 5<br>
+x% = 5 Consider x = x% 5<br>
+x - = 5 Consider x = x-5<br>
+x + = 5 Consider x = x + 5<br>
+x * = 5 Consider x = x * 5.<br>
+      <table border="1" id="bat2">
+            <tr>
+             <td >/*code*/#include <br>
+              void main(){<br>
+                int a, b, sum, diff, mult, rem, quot;<br>
+              a=10;<br>
+              b=8;<br>
+              sum = a + b;<br>  
+              diff = a - b;<br>  
+              mult = a * b;<br> 
+              rem = a % b;<br>   
+              quot = a / b;<br>  
+              printf ("sum is: %d \n", sum);<br>  
+              printf ("difference is: %d \n", diff);<br>  
+              printf ("multiplication is: %d \n", mult);<br>  
+              printf ("remainder is: %d \n", rem);<br>  
+              printf ("quotient is: %d \n", quot);<br>    
+              }
+             </td>
+            </tr>
+        </table>
+      Result
+      <table border="1" class="bat">
+          <tr>
+           <td>sum is:18 <br>
+            difference is:2 <br>
+            multiplication is:80<br>
+            remainder is:2 <br>
+            quotient is:1 <br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br>
+      <b><i>Ratio Operators</i></b><br>
+
+      > Small ratio (since the order of execution is left to right)<br>
+      Great ratio.<br>
+      == equilibrium ratio.<br>
+      > = Greater or equal ratio.<br>
+      <= Small or equal ratio.<br>
+      
+      Logical Operators - Boolean values (true or false) have no c variable in the language and use for this purpose whole variables where value 1 represents true and value 0 represents false.<br>
+      
+      && means also.<br>
+      || Means either.<br>
+      ! = Means different.<br>
+      ! Means no.<br>
+      for example:<br>
+      int good_grade = (grade> 80);<br>
+      If the value of the grade variable is above 80 then the value of the good_grade variable will be 1 otherwise 0.
+      <br>
+      Examples:<br>
+      b = 5<br>
+      a = 10<br>
+      (a> b) The value of this expression is true.<br>
+      ((a-5) == b) The value of this expression is true.<br>
+      (! a && b) The value of this expression is false.<br>
+      (! a && b) The value of this expression is true.<br><br><br>
+
+      <a href="variables.html" class="previous"><span>Previous</span></a>
+<a href="Output_Input.html" class="next"><span>Next</span></a><br><br>
+    </div>
+</div>
+
+<div class="footer" id="bottom">
+    <center>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </center>
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>

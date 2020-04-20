@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="c.css">
+  
+</head>
+<body>
+    <div class="header">
+      </div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">about us</a>
+    <a href="#bottom" class="right">Bottom</a>
+    <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>
+          <a href="c.html">intreduction</a><br>  
+          <a href="variables.html">variables</a><br>
+          <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+          <a href="Output_Input.html">Output / Input</a><br>
+          <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+          <a href="Arrays.html">Arrays</a><br>
+          <a href="function.html">Functions</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+    <div style="height:200px;"></div>
+  </div>
+  <div class="main">
+   <b><i> Arrays</i></b><br>
+   So far we have dealt with simple actions like data entry from the user. Now we want to store and store multiple data of the same type - a data structure that allows us to do this is the array.<br>
+An array is a list of values, each value stored in a serial place in the array. The array basically constitutes a continuous set of memory cells for variables of the same type and in order to access each cell, its serial location must be specified in the array.<br>
+However, each organ in the array is a variable in itself and all actions learned on variables also apply to array organs (such as enlargement and self-reduction, etc.).<br>
+
+Example of using the system: If we want to get grades from 100 students, calculate the average grades, calculate the sum of the grades, and the standard deviation of the grades, then instead of declaring 100 variables, each of which will keep one grade, we will declare one set that will keep all 10 grades.<br>
+The size of the array must be specified in the statement (indicating its static nature - later chapters will be learned about dynamic data structure).<br><br>
+
+The array index starts from 0 to (lenth -1) so if we declare an array with 10 places then the index of the first place is 0 and the last 9.<br>
+Any out-of-cell contact can cause the program to crash, this error is not detected by the compiler.<br>
+<br><br>
+Examples:<br>
+char arrayc [10]; - An array of 10-character characters (string)<br>
+int arrayi [20]; - An array of 20-place integers.<br>
+float arrayf [30]; - An array of real numbers with 30 places.<br>
+<br><br>
+ Note:<br>
+An array of 10 int type spaces occupies 20 bytes of memory because int occupies 2 bytes. The third organ in the array, for example, is at the initial address of the array + 3 * 2.<br>
+The place of the i-organ in memory is: initial address + (the size of the type of house) * i.<br>
+That is, when an array is defined we do not know its initial address but we know that all of its organs are in succession one after the other. For example, if the first cell in the array is at 2000 and it is an array of integers (2 bytes in size) then the second organ will be found at the third 2002 address at 2004 and so on until the last one.<br>
+
+Ways to initialize an array<br>
+Each cell can be initialized separately:<br>
+<br>
+int grades [5];<br>
+grades [0] = 90;<br>
+grades [1] = 80;<br>
+...<br>
+<br>
+You can initialize the definition line by a list of variable values ​​within parentheses separated by a comma:<br>
+
+int grades [5] = {90, 80, ..};<br>
+Here, too, care should be taken not to list a number of organs that exceed the size we have defined.
+<br><br>
+ Note:<br>
+The size of the array cannot be specified if the array is initialized in this way (its size will be calculated automatically according to the number of data values).
+<br><br>
+
+
+
+
+<table border="1" id="bat2">
+    <tr>
+     <td >/*code*/#include <br>
+      #define LENGTH 5<br>
+      void main(){<br>
+        int grades [LENGTH];<br>
+        int i, passed = 0;<br>
+        int sum = 0;<br>
+        float avg = 0;<br>
+        for (i = 0; i < LENG ; i++)<br>  
+        {<br>
+            printf ("Enter your grade: \ n \ r");<br>
+            scanf ("% d", & grades [i]);<br>
+            if (grades [i]> 60)<br>
+        {<br>
+            passed ++;<br>
+            sum + = grades [i];<br>
+        }<br>
+    }<br>
+    avg = sum / LENG;<br>
+    printf ("The average is:% f", avg);<br>
+    printf ("\ n \ r% d student passed the test", passed);<br>  
+}<br>         
+     </td>
+    </tr>
+  </table><br>
+  Result
+  <table border="1" class="bat">
+      <tr>
+       <td>Enter your grade:<br>
+      <b style="color: green;"> /*Suppose that we took the number */</b> <b style="color: red;">65</b><br>
+      Enter your grade:<br>
+      <b style="color: green;"> /*Suppose that we took the number */</b> <b style="color: red;">40</b><br>
+      Enter your grade:<br>
+      <b style="color: green;"> /*Suppose that we took the number */</b> <b style="color: red;">70</b><br>
+      Enter your grade:<br>
+      <b style="color: green;"> /*Suppose that we took the number */</b> <b style="color: red;">85</b><br>
+      Enter your grade:<br>
+      <b style="color: green;"> /*Suppose that we took the number */</b> <b style="color: red;">100</b><br>
+      The average is: 80<br>
+      4 student passed the test_<br>
+        press any key to continue!...
+       </td>
+      </tr>
+  </table><br>
+  puts (string) - This is a string output function that accepts a string argument, prints it, and moves to a new row. Identify the execution of the printf output function when we end with \ n \ r. (The function prints a character until it meets '\ 0').
+  <br> 
+  gets (string) - This is a string input function that accepts a string variable and updates its value (realizes until it meets '\ 0').
+<br><br>
+    <table border="1" id="bat2">
+        <tr>
+         <td >/*code*/#include <br>
+            void main(){<br>
+                char name [6];<br>
+                name [0] = 'H';<br>
+                name [1] = 'e';<br>
+                name [2] = 'l';<br>
+                name [2] = 'l';<br>
+                name [2] = 'o';<br>
+                name [2] = '\0';<br>
+                  puts (name);<br>
+                  printf ("% s \ n \ r", name);<br>
+                char name1 [] = {'W', 'o', 'r', 'l', 'd', '\ 0'};<br>
+                putchar (name1 [0]);<br>
+                putchar (name1 [1]);<br>  
+                putchar (name1 [2]);<br>
+                putchar (name1 [3]);<br>
+                putchar (name1 [4]);<br>
+                putchar ('\ n');<br>
+                char name2 [] = {"Goodbye"};<br>
+                puts (name2);<br>
+            }<br>        
+         </td>  
+        </tr>
+      </table><br><br>
+
+
+      Result
+      <table border="1" class="bat">
+          <tr>
+           <td>Hello<br>
+               Hello<br>
+               W<br>
+               o<br>
+               r<br>
+               l<br>
+               d<br>
+                <br>
+               Goodbye_<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br><br>
+     Example 3:<br>
+    
+    <table border="1" id="bat2">
+        <tr>
+         <td >/*code*/#include stdio.h <br>
+            #include conio.h<br>
+            void main(){<br>
+                char name [10];<br>
+                char l_name [10];<br>
+                printf ("Enter your name:");<br>
+                gets (name);<br>
+                printf ("Enter your last name:");<br>
+                gets (l_name);<br>
+                printf ("Your full name is:");<br>
+                puts (name);<br>
+                puts (l_name)<br><br>  
+                 }<br>  
+         </td>  
+        </tr>
+      </table><br><br>
+
+      Result
+      <table border="1" class="bat">
+          <tr>
+           <td>Enter your name:<br>
+            <b style="color: green;"> /*Suppose that we took the name david */</b> <b style="color: red;">david</b><br>
+               Enter your name<br>
+            <b style="color: green;"> /*Suppose that we took the name blat */</b> <b style="color: red;">blat</b><br>
+               Your full name is:<br>
+               david<br>
+               blat_<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br><br>
+     Note:<br>
+    When using gets (string), pay attention not to include a name that exceeds the boundary of the array as we have already mentioned that this can cause serious errors. Also, before reusing this function, the buffer should be cleared by calling the flushall () function (when there is a buffer residue).
+    <br>
+    Important note:<br>
+    No string placement because string is an array of characters. Every organ is required to be placed in the array.<br><br>
+    <b><i> Library string.h</i></b><br><br>
+    A string handling library, we will see a number of functions in this directory and demonstrate their operation.
+    <br>
+    strlen (string) - A function that returns the number of characters in the string string (not including the character '\ 0').
+    <br>
+    strcpy (string1, string2) - The function accepts 2 string and copies the software of the second string for the first time (i.e. software of the string string1 after this command will be the content of string2).
+    <br>
+    For example:
+    <br>
+    char first [] = "ab";<br>
+    char second [] = "cd";<br>
+    strcpy (first, second);<br>
+    
+    first will contain the string "cd". strcat (string1, string2) - The function accepts 2 strings and concatenates the software of the second string for the first time (software of the string string1 after this command will be the original software and the string will be the string2 string).<br>
+    For example :<br>
+    char first [5] = "ab"<br>
+    char second [] = "cd"<br>
+    strcat (first, second)<br>
+    <br>
+    Now it will first contain "abcd".
+    <br>
+    - strcmp (string1, string1) The function accepts 2 strings and returns 0 if the strings are the same, a positive value if string1> string2 and a negative value if string1 string2.<br>
+    For example: strcmp ("abc", "abc") returns 0.<br>
+    
+    atoi (string) - The function receives a string string and returns its numeric value.<br>
+    For example:<br>
+    atoi ("12") returns the integer 12. itoa (num, string, baes) - The function accepts a number, a string, and a number representing a count basis and returns a numeric string that is the count at the base of the given number.<br>
+    For example:<br>
+    itoa (15, str, 2) will return the string "111".<br><br>
+
+    <a href="https://www.inf.unibz.it/~calvanese/teaching/06-07-ip/lecture-notes/uni07.pdf" class="btn"><i class="fa fa-download"></i>Exercises in Arrays in c </a><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jEFuUrmyNOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br>
+  <a href="Output_Input.html" class="previous"><span>Previous</span></a>
+  <a href="#" class="next"><span>Next</span></a><br><br>
+</div>
+</div>
+<div class="footer" id="bottom">
+    <center>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </center>
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>

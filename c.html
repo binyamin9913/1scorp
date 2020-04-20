@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="c.css">
+</head>
+<body>
+    <div class="header" id="top">
+      </div>
+<div class="navbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">about us</a>
+  <a href="#bottom" class="right">Bottom</a>
+  <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="c.html">intreduction</a><br>  
+          <a href="variables.html">variables</a><br>
+          <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+          <a href="Output_Input.html">Output / Input</a><br>
+          <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+          <a href="Arrays.html">Arrays</a><br>
+          <a href="function.html">Functions</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+    <div style="height:200px;"></div>
+  </div>
+  <div class="main">
+     <p> <b>introduction</b><br>
+      Define what a computer program is: Informally, this is a set of commands to execute for a computer. This series of commands starts from a predetermined place and ends with end commands written by the programmer.
+      Define what is a c-language program: A c-language program is a program that collects commands that have a pre-agreed language - c language. This command collection is known to a programmer and to a specific software called "compiler for c language" or compiler c, which is responsible for translating the program from c language into a program containing commands known to the computer.
+      </p><br><p>
+      history
+      The c language was developed in the early 1970s by bell, the original language was intended for the unix operating system but soon it expanded and developed a large number of versions. In 1983, ansi, the American Standards Institute, established a committee to set a standardized language standard to prevent the various differences between versions, this standard is called ansi c and all compilers are currently built to this standard.
+      </p><br>
+      Why c?
+      C is a relatively small language and so easy to program.
+      C is similar to pascal but has more power.
+      Unix is ​​written in c language.
+      Mobile C means that code written on one machine can easily pass to another.
+      C allows the programmer to access the insides of the computer (bit level)
+      C This is a modular language and is thus easy to understand and economical (tax functions can be called times with different arguments).
+      C is the basis for the c ++ language
+      Procedural programming means that the program is divided into several small code snippets called functions, each function addresses a specific problem.
+      Contains a variety of program flow commands In principle, the computer executes commands in the order they are written, but the program flow can be controlled by commands and conditional execution of parts of the program or execution of certain sections numerous times thus saving code writing and storing it several times. By using loops.
+      C contains a relatively small number of commands, so the compiler of the language is small and simple and the compilation results are effective.<br>
+     <table border="1" id="bat2">
+          <tr>
+           <td >/*code*/#include <br>
+            void main(){<br>
+            printf("Hello World");<br>  
+            }
+           </td>
+          </tr>
+      </table>Result
+      <table border="1" class="bat">
+          <tr>
+           <td > Hello World _<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br>
+      Library functions<br>
+      Library functions are "black boxes" that receive parameters, perform predefined operations, and return value. The parameters passed to the function are recorded in parentheses to the right of the function, the function is executed when the program "reaches" the function and the returned value can be treated as if it appears instead of the puncture after it has ended (for example, we saw in the first program use the printf function found in the stdio directory).
+      We will discuss in more detail the functions in this chapter.
+      <br>
+      The directory we used in the first program is stdio. Each program I / O operation is performed using directory functions that handle I / O and for using these functions, the inclusion of the stdio library into the program is required.
+      <br>
+      We saw in the first program printf () printf (): This command is actually a set of commands for a computer that do not look like a programmer that causes everything that appears between the parentheses and the double quotation marks to be printed on the screen.
+      There are extensions to the print command, these extensions will be written between quotation marks.
+      <br>
+      Main additions to printf (print command):<br>
+      n \ - Move to a new line.<br>
+      t \ - indents by several characters (depending on the default tab).<br>
+      r \ - Move to a new row (just like pressing Enter).<br>
+      "\- Apostrophes.<br>
+      '\ - Gersh.<br>
+      \\ - one reverse slash (\).<br> 
+      <table border="1" id="bat2">
+          <tr>
+           <td >/*code*/#include <br>
+            void main(){<br>
+            printf("first sentence\n");<br>
+            printf("secounds sentence\n");<br> 
+            printf("theard sentence\n");<br>  
+            }
+           </td>
+          </tr>
+      </table>Result
+      <table border="1" class="bat">
+          <tr>
+           <td > first sentence<br>
+            secounds sentence<br>
+            theard sentence_<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br>  
+Remarks<br>
+We can add comments to our program, these comments will only be used by us and anyone who reads the program we wrote (comments are recommended to document the nature of a function or some code snippet as the program becomes more comprehensible).
+<br>
+There are two types of notes:<br>
+// - Note for one line.<br>
+/ * * / - Multiple rows.<br><br>
+<br>
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GteYBl_baIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br>
+<a href="variables.html" class="next"><span>Next</span></a><br><br>
+    </div>
+</div>
+<div class="footer" id="bottom">
+        <center>
+            <a href="https://facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+            <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        </center>  
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>

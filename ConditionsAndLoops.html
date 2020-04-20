@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="c.css">
+  
+</head>
+<body>
+    <div class="header">
+      </div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">about us</a>
+    <a href="#bottom" class="right">Bottom</a>
+    <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>
+          <a href="c.html">intreduction</a><br>  
+          <a href="variables.html">variables</a><br>
+          <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+          <a href="Output_Input.html">Output / Input</a><br>
+          <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+          <a href="Arrays.html">Arrays</a><br>
+          <a href="function.html">Functions</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+    <div style="height:200px;"></div>
+  </div>
+  <div class="main">
+   <b><i>   Control conditions</i></b>
+    <br>
+    Their purpose is to allow us to change the program sequence, skip commands, and execute commands multiple times.<br>
+    We divide the control sentences into three types:<br>
+    
+    Conditional execution commands:<br>
+    The if and else commands<br>
+    Switch and case commands<br>
+    The operator?
+    <br>
+    Loops commands:<br>
+    Commands for<br>
+    The while command<br>
+    The do while command<br>
+    (And break and continue auxiliary commands)<br>
+    
+    Continue elsewhere in the program:<br>
+    goto<br>
+    
+    Trial if<br>
+    
+    A control statement that allows us to make conditional execution of instructions or commands when a particular condition is checked and executed according to the value of the condition: true - represented by any number other than 0, and false - represented by the digit 0.<br>
+    If statement allows us to branch out our program by logical terms as follows:<br>
+    
+    Template of the if command:<br>
+    
+    if (term)<br>
+    {<br>
+        expression a;<br>
+    }<br>
+    else<br>
+    {<br>
+        expression b;<br>
+    }<br>
+    
+    That is, if the condition within the if statement is met (term value is "true" when the condition value is different from zero), follow the commands that appear between the curly brackets (expression a). If the condition is not met, follow the set of commands that appear between the two curly brackets (expression b).<br>
+    
+     Note:<br>
+    It is also possible without bracketed brackets but then only the first sentence after the condition will be performed, assuming the condition is true.
+        <br>
+      <table border="1" id="bat2">
+            <tr>
+             <td >/*code*/#include <br>
+              void main(){<br>
+                int a;<br>
+                printf("Enter a number between 0-100: ");<br>
+                scanf("%d",&a);<br>
+                if (a < 0)<br>
+                printf("The number is not at the target");<br>  
+                else if (a < 10)<br>
+                printf("The number is between 0-10");<br>
+                else if (a < 20)<br>
+                printf("The number is between 10-20");<br>
+                else if (a < 30)<br>
+                printf("The number is between 20-30");<br>
+                else if (a < 40)<br>
+                printf("The number is between 30-40");<br>
+                else if (a < 50)<br>
+                printf("The number is between 40-50");<br>  
+                else if (a < 60)<br>
+                printf("The number is between 50-60");<br>  
+                else if (a < 70)<br>
+                printf("The number is between 60-70");<br>  
+                else if (a < 80)<br>
+                printf("The number is between 70-80");<br>
+                else if (a < 90)<br>
+                printf("The number is between 80-90");<br>  
+                else if (a < 100)<br>
+                printf("The number is between 90-100");<br>          
+              }
+             </td>
+            </tr>
+        </table><br>
+      Result
+      <table border="1" class="bat">
+          <tr>
+           <td>Enter a number between 0-100:<br>
+          <b style="color: green;"> /*Suppose That a= 75 */</b> <b style="color: red;">75</b><br>
+            The number is between 70-80_<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br>
+     <b><i>Sentence swich</i></b><br>
+
+In the last example, we showed multiple choice by a complex if statement. Let us now see how it can be simplified and allowed for a more convenient and clear way of doing the following:
+<br>
+constant1- first constant.
+<br>
+constantn - the constant n.
+<br>
+switch (exp or variable)<br>
+{<br>
+    case constant1: command; break;<br>
+    case constant2: command; break;<br>
+    case constant3: command; break;<br>
+
+
+    case constantn: command; break;<br>
+    default: command;<br>
+}<br>
+<br>
+
+switch receives a variable or expression and calculates its value. The resulting value is a constant (numeric or alphabetical value) and the command that corresponds to the calculated value is executed, that is, the program faces the appropriate case line and executes the commands that follow it until it reaches the break command.<br>
+The purpose of the break command is to prevent the following commands from being executed in the following cases.<br>
+If the value obtained from the switch statement does not match any of the cases, the instructions following the defaut command are followed.<br>
+
+ Note:<br>
+The default command does not have to appear but in this case if the constant calculated in the switch does not match one of the case-s, nothing will be done.<br>  
+<table border="1" id="bat2">
+  <tr>
+   <td >/*code*/#include <br>
+    void main(){<br>
+      char ch;<br>
+      printf("Enter a char (between a-e): ");<br>
+      scanf("%c", &ch);<br>
+      switch(ch)<br>
+      {<br>  
+      case 'a': printf("You have printed a");<br>
+      case 'b': printf("You have printed b");<br>
+      case 'c': printf("You have printed c");<br>
+      case 'd': printf("You have printed d");<br>
+      case 'e': printf("You have printed e");<br>
+      default: printf("Your char is not between a-e");<br>
+        }<br>  
+    }<br>         
+    }
+   </td>
+  </tr>
+</table><br>
+Result
+<table border="1" class="bat">
+    <tr>
+     <td>Enter a char (between a-e):<br>
+    <b style="color: green;"> /*Suppose that we took the charecter a */</b> <b style="color: red;">a</b><br>
+      You have printed a_<br>
+      press any key to continue!...
+     </td>
+    </tr>
+</table><br>
+<b><i>Conditional expression?</i></b><br>
+
+The template of?<br>
+
+condition? exp1: exp2;<br>
+
+Before the? There is a condition and if the condition is met, the first expression must be performed. Otherwise (condition does not exist) the second expression (which appears immediately after the colon "":) must be performed.<br>
+The value obtained can also be placed in a variable or for printing (in the printf command).<br>
+In fact, this phrase can be translated into a sentence if:<br>
+
+if (condition)<br>
+     exp1;<br>
+else<br>
+     exp2;<br>
+<b style="color: yellow;"><i>Example:</i></b><br>
+int x, y, z;<br>
+if (x> y)<br>
+        z = x;<br>
+    else<br>
+        z = y;<br>
+Q: According to the conditional phrase? We will record this<br>
+    int x, y, z;<br>
+    z = (x> y)? x: y;<br>
+Thus, the variable z will have the maximum value of the variables x, y<br>
+
+
+<br>
+                <b><i>Loop for</i></b><br>
+
+Loops allow instruction or block instruction in the program several times according to our needs.<br>
+When we want a block of commands or a single command to be executed multiple times we use the for loop.<br>
+The for loop is also called the incandescent loop.<br>
+The loop is made up of three parts:<br>
+1. Initialize variables.<br>
+2. Terms of performance.<br>
+3. Promoting variables.<br>
+
+Loop structure:<br>
+
+for (initialization; boolean condition; increment)<br>
+{<br>
+   . . .<br>
+}<br>
+The three parts of the loop are separated by them; (Semicolon).<br>
+In the first part variables are initialized, in the second the loop conditions are tested - where if the boolean value of this condition is true, the loop body will be executed and if we do not exit the loop and in the third part (performed after the loop body is executed) variables are promoted.<br>
+It should be noted that the boot is only done once at the loop entry, then the loop conditions are checked and if the value is verified, the loop body is followed, then the variables are promoted and the loop conditions are checked again. The routine will be performed until the loop conditions are not met and we will continue the program after the for loop.<br>
+
+ Note:<br>
+You can skip parentheses if the loop body consists of one line of code.<br>
+<br>
+<br>
+Omitting parts in the loop:<br>
+Sometimes we want to give up one of the loop components.<br>
+Any of the three loop parts (boot, loop conditions, promotion) can be empty.<br>
+For example:<br>
+int a = 5;v
+for (; a < 5; a ++)<br>
+{<br>
+    . . .<br>
+}<br>
+In this example, we skipped the variable boot since we initialized it.<br>
+
+int a;<br>
+for (a = 5; a < 5;)<br>
+{<br>
+    . . .<br>
+a ++;<br>
+}<br>
+In this example we omitted the promotion of the variable, the promotion done in the loop body.<br>
+
+The part of the loop condition cannot be omitted because we will then receive an infinite loop (although the problem can be overcome through a break, but this form is less acceptable).<br>
+
+
+
+<table border="1" id="bat2">
+  <tr>
+   <td >/*code*/#include <br>
+    void main(){<br>
+      double i;<br>
+      double result = 1;<br>
+      printf ("Factorial function: \ n \ r");<br>
+      for (i = 0; i < 10; i ++)<br>
+      {<br>  
+        if (i! = 0)<br>
+        result * = i;<br>
+        printf ("% lf \ n \ r", result);<br>
+      }<br>
+    }<br>
+   </td>
+  </tr>
+</table><br>
+
+<table border="1" class="bat">
+  <tr>
+   <td>Factorial function:<br>
+    1.0<br>
+    2.0<br>
+    6.0<br>
+    24.0<br>
+    120.0<br>
+    720.0<br>
+    5040.0<br>
+    40320.0<br>
+    362880.0<br>
+    press any key to continue!...
+   </td>
+  </tr>
+</table><br>
+    Hover over the example to see a detailed explanation<br>
+  <br>
+      <br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/6u8WDI5oshg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br>
+  <a href="Output_Input.html" class="previous"><span>Previous</span></a>
+  <a href="#" class="next"><span>Next</span></a><br><br>
+</div>
+</div>
+<div class="footer" id="bottom">
+    <center>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </center>
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>

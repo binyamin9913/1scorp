@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="c.css">
+</head>
+<body>
+    <div class="header">
+      </div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">about us</a>
+    <a href="#bottom" class="right">Bottom</a>
+    <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>
+            <a href="c.html">intreduction</a><br>  
+            <a href="variables.html">variables</a><br>
+            <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+            <a href="Output_Input.html">Output / Input</a><br>
+            <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+            <a href="Arrays.html">Arrays</a><br>
+            <a href="function.html">Functions</a><br>
+            <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+    <div style="height:200px;"></div>
+  </div>
+  <div class="main">
+   <b><i> Library stdio</i></b>
+    <br>
+    In previous chapters, we have superficially recognized the scanf input function and the printf output function - for standard input and output from the stdio directory.<br> 
+    In this section, we will introduce a number of functions of the stdio library and their structures:
+    <br>printf and scan for built-in input and output.
+    puts and gets for string input and output. <br>
+    putchar and getchar for single characters. <br>
+    That is, in this chapter we will see typical output input functions for specific types only. <br>
+    
+    Single character output - putchar () function <br>
+    
+    The putchar () function allows us to print a single character to the screen. <br>
+    Let's illustrate this by an example: <br>
+    putchar ('H'); <br>
+    This command will print the character H on the screen. <br>
+    You can also enter a character value into a variable and enter the name of the variable into the putchar command, thus printing the value of the variable, for example: <br>
+    char ch = 'a'; <br>
+    putchar (a); <br>
+    
+    Template of the putchar () function <br>
+    putchar (char); <br>
+    We will write a character between individual quotes, for example: 'H' but if we want to print the value of a character variable we will write between the round parentheses of the putchar function without single quotes or asci value even without quotes. <br>
+    
+    Single character input - getchar () function <br>
+    
+    The getchar () function allows a single character to be input from the standard input unit (keyboard). <br>
+    We want to maintain the value of the character, so we make sure that the value returned by the getchar function is kept in a character variable. <br>
+    For example: <br>
+    char c; <br>
+    c = getchar (); <br>
+    So if the user pressed H then the variable c would store the value H. <br>
+    
+    Template of the () getchar function <br>
+    char = getchar (); <br>
+    We will use this command extensively because if we want to see the output of the program we will record the command at the end of the program and after that the program will stop and wait for user input. The program will not progress until it receives input from the user and on this occasion the user can read the output of the program and when finished press any key. We do not keep the character enclosed in the variable (because its value is irrelevant to us). <br>
+    
+    Structured output - function () printf <br>
+    
+    This function allows you to print several different variables by the same command (ie in one sentence). <br>
+    The number of values ​​we want to print can vary, the command () printf supports changing the output structure according to our needs. <br>
+    You can also print strings without using any variables. In this case, we will only write the string between quotation marks within the round brackets of the (printf) command. <br>
+    Remember that different characters can be added to the command according to our needs - for example, adding "n \" allows you to move to a new line, etc. <br>
+    
+    Template of the command () printf: <br>
+    printf (“….”, first_v, second_v,…, last_v); <br>
+    The quotes of the () printf command must list the appropriate conversion template for each variable.
+        <br><br><br><br>
+        <b><i> Built-In Input - function () scanf</i></b><br>
+This function allows for easy input of values. This function allows you to input several values ​​of different types (such as the printf () command allows you to print multiple variables of different types). The number of values ​​we want to absorb can vary, the scanf () command supports changing the input structure according to our needs.
+<br>
+Template of the command () scanf:<br>
+scanf ("……", & addres_of_first_v, & address_of_second_v, ..., & adderss_of_last_v);<br>
+The quotation marks of the (scanf) command must list the conversion templates of variables, that is, if you want to input a variable of an integer type, insert the quotation mark% d and the precursor name must include the address operator (&) and all variables. Care must be taken in writing the variables and conversion patterns.<br>
+In fact, by writing the address operator we make sure to enter the values ​​into the corresponding addresses of the respective variables.<br>
+
+ Note: If we forget the (&) address operator, we may crash the program.<br>
+
+Example:<br>
+long num_of_course;<br>
+float grade;<br>
+long id;<br>
+printf ("Enter your number of course id number and grade \ n");<br>
+scanf ("% ld% ld% f", & num_of_course, & id, & grade);<br>
+
+
+Let's summarize:<br>
+() getchar - Single character input function. Values ​​should not be entered between the parentheses of the function, the returned value (i.e. the user input) will be stored in the variable.
+<br>() putchar - Single character output function. The character brackets must be entered with single quotes or the name of a character variable or asci value.
+<br>() printf - Output function of several variables of different types and strings.
+<br>() scanf - Input function of several variables of different types.
+
+Buffer Clear - Flushall () function
+
+<br>A buffer is a memory section designed to temporarily store input before the program handles it and temporarily store output that the program processes, on its way to the screen or printer.
+<br>That is, all input and output operations are performed via a buffer and therefore unwanted data may be found in the buffer which may disrupt the program run and prevent it from clearing the buffer.
+<b style="color:yellow;"><br>Example:<br>
+char ch;<br>
+int num;<br>
+printf ("Enter your number:");<br>
+scanf ("% d", num);<br>
+<b style="color: red;">flush hall ();</b><br>
+printf ("enter your char:");<br>
+ch = getchar ();<br></b>
+
+
+ Note: If we do not enter the flushall () command, the program will not wait for a character input from the user and ch will have a "garbage" value.
+        <br>
+      <table border="1" id="bat2">
+            <tr>
+             <td >/*code*/#include <br>
+              void main(){<br>
+                char ch;<br>
+                int a;<br>
+                printf("Enter value to ch ");<br>
+                ch = getchar();<br>
+                putchar(ch);<br>  
+                a = (int)ch;<br>  
+                printf("\n\rThe value of a is: ");<br> 
+                putchar(a);<br>   
+                printf("\n\rChange the value of ch ");<br>  
+                flushall();<br>  
+                scanf("%c",ch);<br>  
+                printf("\n\rThe asci value of ch is: %d",ch);<br>     
+              }
+             </td>
+            </tr>
+        </table><br>
+      Result
+      <table border="1" class="bat">
+          <tr>
+           <td>Enter value to ch  <br>
+          <b style="color: green;"> /*Suppose we took the character a */</b> <b style="color: red;">a</b><br>
+            The value of ch is:<br>
+            a<br>
+            97<br>
+            Change the value of ch <br>
+            <b style="color: green;"> /*Suppose we took the character c */</b> <b style="color: red;"> c </b><br>
+            The asci value of ch is: 99_<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br>
+      <a href="OperandsAndOperators.html" class="previous"><span>Previous</span></a>
+<a href="ConditionsAndLoops.html" class="next"><span>Next</span></a><br><br>
+    </div>
+</div>
+
+<div class="footer" id="bottom">
+    <center>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </center>
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="c.css">
+  
+</head>
+<body>
+    <div class="header">
+      </div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">about us</a>
+    <a href="#bottom" class="right">Bottom</a>
+    <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>
+          <a href="c.html">intreduction</a><br>  
+          <a href="variables.html">variables</a><br>
+          <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+          <a href="Output_Input.html">Output / Input</a><br>
+          <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+          <a href="Arrays.html">Arrays</a><br>
+          <a href="function.html">Functions</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+    <div style="height:200px;"></div>
+  </div>
+  <div class="main">
+   <b><i> Functions</i></b><br><br>
+   In the first chapter, we argued that language c is a procedural language, which means that the program can be broken down into functions - any function with a defined role and can be used by calling the function.<br>
+   The advantage is the simplicity of reading the program and understanding it.<br>
+   A function, then, is a piece of code with a unique name (like main) with a clear purpose, for example - a function that reads data from the keyboard, prints, sorts, etc.
+   <br>
+   Function Definition Template:<br>
+   returned_type function_name (list_of_parameters)
+   <br>
+   returned_type - The type of value returned by the function. For example, the main function does not return a value and so its returned value type will be void.<br>
+   function_name - The name of the function. A significant name must be given to indicate the role of the function. As the main function name is called main and unchangeable.<br>
+   list_of_parameters - List of parameters (variables), separated by commas. The parameters are the values ​​that the function needs to perform in order to perform its function.<br>
+   In case no parameters are needed we will leave the function brackets blank.<br>
+   
+    definition:<br>
+   Arguments - The variables placed when calling a function.<br>
+   Parameters - are the variables that appear within the parenthesis of the function. These include the arguments the program sends.
+   <br>
+   When we send as a 2D parameter, the first dimension can be omitted but the second must appear. By passing a one-dimensional array as a parameter, its size can be omitted.
+   <br>
+   When writing the functions above the main function (main), no function statement is required. Conversely, if the function is written after the main function it must be declared (in order for the main function to recognize it) as we have defined a function definition template or without the parameter name.
+   <br>
+   For example:
+   <br>
+   int sum (int s);<br>
+   : Or so<br>
+   int sum (int);<br>
+   In both cases the compiler will know that the function will be defined below.
+   <br>
+   In writing the function and defining it you can use different names for arguments, ie if you send a function a variable named b, then the name b must not appear after the function but other names can be used. This is because the value of the variable is the one copied to the function parameter, ie when the function is called copied One by one the values ​​of the arguments found in a command call to and initialize the function parameters.<br>
+   When calling a function we must provide it with the necessary values ​​according to the different parameters of the function so that while we call the function these values ​​are copied to the different parameters and the values ​​of the parameters can be changed without affecting the values ​​we sent.<br>
+   The function can be called an unlimited number of times.<br>
+   
+   When passing variables to a function as parameters, the values ​​of the variables do not change after the function is executed. However, since the state of the state is different (no copying is done as already mentioned), even calling a function does not copy an array argument to the function parameter and a change in the function in the array values ​​will leave the array values ​​with the change even after the function is completed.<br>
+   
+    Example 1:<br>
+   
+   Pascal's Triangle - As is known to contain Newton's binomial coefficients, each organ is obtained from the sum of the two organs below it. We created a 9X9 array but used half, all other cells in the array contain 0.
+   <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.inf.unibz.it/~calvanese/teaching/06-07-ip/lecture-notes/uni07.pdf" class="btn"><i class="fa fa-download"></i>Exercises in Arrays in c </a><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jEFuUrmyNOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br>
+  <a href="Output_Input.html" class="previous"><span>Previous</span></a>
+  <a href="#" class="next"><span>Next</span></a><br><br>
+</div>
+</div>
+<div class="footer" id="bottom">
+    <center>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </center>
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>c langege</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Aguafina Script' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="c.css">
+</head>
+<body>
+    <div class="header">
+      </div>
+<div class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">about us</a>
+    <a href="#bottom" class="right">Bottom</a>
+    <a href="#top" class="right">Top</a>
+</div>
+
+<div class="row" id="google_translate_element">
+  <div class="side" id="fakeimg">
+      <button class="dropdown-btn" id="bat">intreduction</button>
+      <div class="dropdown-container">
+        <center>
+          <a href="c.html">intreduction</a><br>  
+          <a href="variables.html">variables</a><br>
+          <a href="OperandsAndOperators.html">Operands and Operators</a><br>
+          <a href="Output_Input.html">Output / Input</a><br>
+          <a href="ConditionsAndLoops.html">conditions and Loops</a><br>
+          <a href="Arrays.html">Arrays</a><br>
+          <a href="function.html">Functions</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> data structures</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">variables</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      <button class="dropdown-btn" id="bat"> tests</button>
+      <div class="dropdown-container">
+        <center>  
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </center>
+      </div>
+      
+  </div>
+  <div class="main">
+       <b>variables</b><br>
+       <a href="http://www.aviv.org.il/APPS/Public/GetFile.aspx?inline=yes&f=Files/6202BF2E-DF58-4347-9B32-1ECFD84803A3/87350FAB-49DB-45B4-8F93-91BD10ACF402/C4B61C0E-6B17-4808-B0F9-092E49E3E29E/7EB7B082-258E-4791-9A14-612FF9751A18.doc&n=%D7%AA%D7%A8%D7%92%D7%99%D7%9C%D7%99%D7%9D%20%D7%91%D7%A9%D7%A4%D7%AA%20C%20%20%D7%AA%D7%A9%D7%A1%D7%97.doc" class="btn"><i class="fa fa-download"></i>Exercises in variables in c  </a><br>
+        A variable is a space defined in memory that can contain a value of a particular type when the type of type is defined in a declaration of the variable. Each variable has a unique name and one value set. A variable stores data and its value can be determined and changed by the programmer (as it is). The variables must be declared in advance (thus allocating memory - the memory volume is measured in bytes).
+        <br>
+        Example of declaration of a variable:<br>
+        int x;<br>
+        The variable is, x of int type.<br>
+        
+        
+        In defining the variables, it is important (not mandatory but highly recommended) to use meaningful names in order for our program to be readable and structured. Let's look at a few examples: Suppose our program summarizes the numbers from 1 to 10, then we will define a variable and its name sum. It is now clear that this variable will contain the sum of the numbers summarized at the end of the program. Or for example - a program that takes student names and grades, then we define two variables first name for saving the student's name and grade for saving his grade.<br>
+        
+         Note: The variable name is usually limited to 32 characters. So if we declare a variable with 42 characters the compiler will ignore the last ten characters.<br>
+        
+         Note: The c compiler is sensitive to changes in signal size so that a variable named Name, Name, NAME - are in fact three variables and not one and therefore the variables must be written.
+        <br>
+        Block - A series of commands that appear inside curly brackets {a1; a2; …., An;} where a1, a2,…, an language commands.
+        <br><br>
+        <b>Place  of defined variables</b>
+        <br>
+        Variables can be defined outside of functions or at the beginning of a block when declaring variables. The statement block must be executed at the beginning of the block and before any other directive, ie if there is a command like () clrscr before me the compiler variable declaration will alert the existence of an error. Also, the range of recognition of these variables is in the block only.
+        <br>
+        Variables are divided into two types:
+        Global and local variables.
+        <br>
+        Global Variables: Variables declared outside of a function constitute global variables relative to this function (since we have not yet discussed functions in c, global variables for now are variables that are declared outside of main ()). All of the functions that come after the statement recognize these variables, that is, a variable declared outside the function and it is recognized by the functions defined after its statement and until the end of the program.
+        <br>
+        Local Variables: Variables declared within the function and no external functions known to them, meaning "life span" is within the function itself (again - when discussing the functions we will see the uses).
+        <br>
+        Instead of showing realization of variables through functions, we can illustrate this by using blocks.
+        <br>
+        The reference of the variables to the same functions with respect to blocks is that a variable declared outside the block constitutes a global variable relative to it, whereas a declared variable inside the block constitutes a local variable relative to it.
+        <br>
+        To display the value of variables on the screen, a conversion is required, ie within the string we will not write the variable name (for example, int a = 7 the variable name is a and its value 7).
+        <br><br>
+        <b>Types of variables</b>
+        <br>
+        char - A variable for storing characters or symbols, occupying one byte in memory, where you can store integer values ​​from 128 to +127 characters and marks are all letters, punctuation, or other markings that can be generated by the computer.
+        <br>
+        int - Variable for storing an integer. Occupying two bytes of memory can store entire values ​​from 32768 to +32767.
+        <br>
+        float - a variable of real numbers up to 6 digits (stored by floating point method) The sub occupies four bytes in memory
+        <br>
+        double - Used to store real values ​​in larger domains, up to 10 digits, occupying eight bytes of memory.
+        <br>
+        long - can store entire values ​​in a range greater than int occupies four bytes in memory.
+        <br>
+        sing / unsing - Any numeric variable can be set to sing (with a +/- sign or or unsing (without sign) where sing indicates the storage of negative numbers and positive ones, while unsing specifies the storage of negative numbers, as a result of defining a variable as its positive range has increased .
+        For example, sing char can store values ​​from the range (-128 +127) Conversely if we set the variable as unsing char values ​​from the range can be stored (0 255).
+        The default defaults to an automatic variable.
+        <br>
+        Valid names for variables
+        <br>
+        A unique name must be assigned to each variable, thus allowing us to store a particular cell in a value memory and we can also refer to that cell to read the value.
+        The variable cannot be named in any way that comes to our mind but there are rules for these variable names must start with a lowercase or a lower case (but we recommend using only the letters) nor can we name names that are reserved words like else if int etc.
+        The rest of the variable name characters can be numbers, letters, and underscores, but be careful not to include additional characters such as a period, comma, and space.
+        <br><br>
+        <b><i>The type table</i></b>
+        <table border="1">
+           <tr>
+                <td><b>type</b></td>
+                <td>number of bytes</td>
+                <td>term of numbers</td>
+           </tr>
+           <tr>
+                <td>char,singed char</td>
+                <td>1</td>
+                <td>128-127+</td>
+           </tr> 
+           <tr>
+                <td>unsigned char</td>
+                <td>1</td>
+                <td>0-255+</td>
+           </tr>
+           <tr>
+                <td>int ,sign int</td>
+                <td>2</td>
+                <td>32767+ 32768-</td>
+           </tr>  
+           <tr>
+                <td>unsign int</td>
+                <td>2</td>
+                <td>65535+ 0</td>
+           </tr>  
+           <tr>
+                <td>long,long int,signed long int</td>
+                <td>4</td>
+                <td>2147483647+ 2147483648-</td>
+           </tr>  
+           <tr>
+                <td>unsigned long,unsigned long int</td>
+                <td>4</td>
+                <td>4294967295+ 0</td>
+           </tr>  
+           <tr>
+                <td>float</td>
+                <td>4</td>
+                <td>+38 3.4e-38</td>
+           </tr>  
+           <tr>
+                <td>double</td>
+                <td>8</td>
+                <td>+308 1.7e+308</td>
+           </tr>  
+           <tr>
+                <td>long double </td>
+                <td>10</td>
+                <td>+4932 3.4e4932</td>
+           </tr>    
+        </table>
+        <br>
+        Placing variable values and initialization<br>
+
+        When declaring a new variable its value is unknown. It can contain a value set to it in the previous program or zero or any other value and therefore to place a value in a variable using the equality operator. For example - if we want to give a variable named grade the value 100 we will record:
+      <br>
+        grade = 100;
+      <br>
+      <table border="1" id="bat2">
+            <tr>
+             <td >/*code*/#include <br>
+              void main(){<br>
+              int a,b,c;<br>
+              a=10;<br>
+              b=20;<br>  
+              c=(a+b)/2;<br>  
+              printf("the average of a and b is : %d",c)<br>   
+              }
+             </td>
+            </tr>
+        </table>
+      Result
+      <table border="1" class="bat">
+          <tr>
+           <td>the average of a and b is :15 _<br>
+            press any key to continue!...
+           </td>
+          </tr>
+      </table><br>
+        % d to display integer<br>
+        % f to display float<br>
+        % ld to display long<br>
+        % c to display char<br>
+        % s to display string<br>
+        % lf to display double<br><br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/n7XpeHYlgnk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><br><br><br><br>
+        <a href="c.html" class="previous"><span>Previous</span></a>
+<a href="OperandsAndOperators.html" class="next"><span>Next</span></a><br><br>
+    </div>
+</div>
+
+<div class="footer" id="bottom">
+    <center>
+        <a href="https://facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href= "https://mail.google.com/mail/" class="fa fa-google"></a>
+        <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </center>
+</div>
+<script src="c.js"></script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+</body>
+</html>
